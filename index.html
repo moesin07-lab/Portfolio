@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moe Myint Kyal Sin — PMP Experience Portfolio</title>
+  <meta name="description" content="PMP Experience Portfolio · Creative Project Management · Communications & IO Psychology" />
+  <meta name="theme-color" content="#b88a1b" />
+  <link rel="icon" type="image/png" href="assets/sunflower.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --text: #efefef;
+      --muted: #bdbdbd;
+      --gold: #b88a1b;
+      --gold-2: #d6b35a;
+      --card: #141416;
+      --line: #232327;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    /* nav */
+    .nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(14,14,16,0.85); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .3px; }
+    .brand img { width: 24px; height: 24px; border-radius: 50%; }
+    .nav a { color: var(--text); text-decoration: none; margin-left: 18px; font-weight: 600; }
+    .nav a:hover { color: var(--gold-2); }
+
+    /* hero */
+    header.hero { max-width: 1100px; margin: 0 auto; padding: 56px 20px 28px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+    h1 { font-size: 40px; margin: 0 0 6px; }
+    .tagline { font-size: 18px; color: var(--muted); }
+    .links { margin-top: 16px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--gold); text-decoration: none; font-weight: 700; color: var(--gold-2); }
+    .btn.primary { background: var(--gold); color: #111; border-color: var(--gold-2); }
+    .headshot { width: 100%; min-height: 280px; background: url('assets/headshot.jpg') center/cover no-repeat; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+
+    /* section */
+    section { padding: 40px 0; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    h2 { font-size: 26px; margin: 0 0 16px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 16px; }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .grid.three { grid-template-columns: repeat(3, 1fr); }
+    .pill { display: inline-block; font-size: 12px; padding: 4px 10px; border: 1px solid var(--gold-2); color: var(--gold-2); border-radius: 999px; margin-right: 6px; margin-top: 6px; }
+
+    /* timeline */
+    .timeline { border-left: 2px solid var(--gold-2); padding-left: 16px; margin-left: 8px; }
+    .tl { margin-bottom: 18px; position: relative; }
+    .tl::before { content: ''; position: absolute; left: -12px; top: 6px; width: 10px; height: 10px; background: var(--gold-2); border-radius: 50%; box-shadow: 0 0 0 4px rgba(214,179,90,0.15); }
+
+    /* footer */
+    footer { border-top: 1px solid var(--line); padding: 24px 20px; text-align: center; color: var(--muted); }
+
+    @media (max-width: 880px) {
+      header.hero { grid-template-columns: 1fr; }
+      .grid.two, .grid.three { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="assets/sunflower.png" alt="Sunflower logo" />
+        <div>Moe Myint Kyal Sin</div>
+      </div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <h1>Moe Myint Kyal Sin</h1>
+      <div class="tagline">PMP Experience Portfolio · Creative Project Management · Communications &amp; IO Psychology</div>
+      <div class="links">
+        <a class="btn primary" href="#contact">Contact</a>
+        <a class="btn" href="https://www.linkedin.com/in/moesin07" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://linktr.ee/moesin.diary" target="_blank" rel="noopener">Linktree</a>
+        <a class="btn" href="https://instagram.com/moesin.diary" target="_blank" rel="noopener">@moesin.diary</a>
+      </div>
+    </div>
+    <div class="headshot" aria-label="Profile photo"></div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About Moe</h2>
+      <div class="card">
+        <p>Driven by creativity, purpose, and connection, I bridge psychology and communication through storytelling and structured project leadership. I build campaigns and programs that spark growth, empower communities, and deliver measurable results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap grid two">
+      <div class="card">
+        <h2>Education &amp; Certification</h2>
+        <ul>
+          <li>California State University, Fullerton — <strong>B.A. Communications (Public Relations)</strong>, Expected May 2026</li>
+          <li>Pasadena City College — <strong>A.A. Communication, Psychology, Sociology</strong> (2020–2024)</li>
+          <li><strong>Certified ScrumMaster®</strong> — Scrum Alliance (Mar 2024–Mar 2026)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Quick Links</h2>
+        <p><a class="btn" href="https://www.linkedin.com/in/moesin07" target="_blank" rel="noopener">LinkedIn</a>
+           <a class="btn" href="https://linktr.ee/moesin.diary" target="_blank" rel="noopener">Linktree</a>
+           <a class="btn" href="https://instagram.com/moesin.diary" target="_blank" rel="noopener">@moesin.diary</a></p>
+        <p class="muted">Open to hybrid roles across California.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience Timeline</h2>
+      <div class="card timeline">
+
+        <div class="tl">
+          <strong>Account Executive (Guan Fitness)</strong> · Titan Public Relations<br/>
+          <span class="muted">Sep 2025 – Dec 2025 · ~150 hrs</span>
+          <p>Led team, managed client, delivered brand identity and growth strategy for Guan Fitness.</p>
+          <span class="pill">Initiation</span><span class="pill">Planning</span><span class="pill">Execution</span>
+        </div>
+
+        <div class="tl">
+          <strong>Brazilian Spotlight 2025</strong> · Newport Beach Film Festival<br/>
+          <span class="muted">Aug 2025 – Dec 2025</span>
+          <p>Coordinated sponsor outreach, creative assets, and event logistics for the NBFF Brazilian Spotlight.</p>
+          <span class="pill">Coordination</span><span class="pill">Event Management</span><span class="pill">Outreach</span>
+        </div>
+
+        <div class="tl">
+          <strong>Thrive Mentor</strong> · CSUF Public Health<br/>
+          <span class="muted">Aug 2025 – May 2026</span>
+          <p>Guided first-gen students through personal growth and leadership development sessions.</p>
+          <span class="pill">Mentorship</span><span class="pill">Leadership</span><span class="pill">Coaching</span>
+        </div>
+
+        <div class="tl">
+          <strong>The Inner Universe Podcast</strong> · Self-Produced<br/>
+          <span class="muted">Apr 2025 – Present</span>
+          <p>Produced and hosted podcast exploring creativity, healing, and psychology through storytelling.</p>
+          <span class="pill">Creative Production</span><span class="pill">Storytelling</span><span class="pill">Branding</span>
+        </div>
+
+        <div class="tl">
+          <strong>Account Coordinator (Litterbox)</strong> · Titan Public Relations<br/>
+          <span class="muted">Sep 2024 – Dec 2024</span>
+          <p>Developed social media and PR campaign strategy for an EDM client to grow awareness and engagement.</p>
+          <span class="pill">Planning</span><span class="pill">Strategy</span><span class="pill">Execution</span>
+        </div>
+
+        <div class="tl">
+          <strong>Fearless Futures &amp; The Artist’s Mind Podcasts</strong> · Fearless Digital<br/>
+          <span class="muted">Jan 2023 – Oct 2023</span>
+          <p>Produced two podcast series focused on creativity, mindset, and emotional growth.</p>
+          <span class="pill">Content Creation</span><span class="pill">Collaboration</span><span class="pill">Production</span>
+        </div>
+
+        <div class="tl">
+          <strong>HD eCommerce Project</strong> · Helmets &amp; Decals<br/>
+          <span class="muted">Mar 2021 – Apr 2022</span>
+          <p>Built eCommerce business for a client, handling site design, branding, and launch strategy.</p>
+          <span class="pill">Design</span><span class="pill">Launch</span><span class="pill">Marketing</span>
+        </div>
+
+        <div class="tl">
+          <strong>Social Media Marketing Agent</strong> · Fearless Digital (Freelance)<br/>
+          <span class="muted">Jul 2020 – Apr 2021</span>
+          <p>Created and executed digital marketing campaigns for clients in the creative and tech industries.</p>
+          <span class="pill">Social Media</span><span class="pill">Brand Strategy</span><span class="pill">Advertising</span>
+        </div>
+
+        <div class="tl">
+          <strong>Consumer Technology Association (CTA)® MONOXERO Project</strong> · CTA<br/>
+          <span class="muted">Mar 2017 – May 2017</span>
+          <p>Developed concept for MONOXERO, a free-internet technology for emerging regions; pitched at CTA.</p>
+          <span class="pill">Innovation</span><span class="pill">Presentation</span><span class="pill">Technology</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/moesin07" target="_blank" rel="noopener">linkedin.com/in/moesin07</a></p>
+        <p><strong>Linktree:</strong> <a href="https://linktr.ee/moesin.diary" target="_blank" rel="noopener">linktr.ee/moesin.diary</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/moesin.diary" target="_blank" rel="noopener">@moesin.diary</a></p>
+        <p class="muted">Open to hybrid opportunities across California.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Moe Myint Kyal Sin
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
